@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a0a4d15-3a34-4a21-8408-a2f200448836" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/components/FileUpload.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/NavBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/Player.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/StepWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/TrackItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/TrackList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/TrackProgress.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/layouts/MainLayouts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/tracks/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/tracks/create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/tracks/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store/reducers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/styles/Player.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/styles/TrackItem.module.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F3G3AjbLAofNwcJr6GvD34QS7L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/macuser/Documents/javascriptProject/Pet-projects/spotify-clone",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Errors",
+    "ts.external.directory.path": "/Users/macuser/Documents/javascriptProject/Pet-projects/spotify-clone/client/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactBuddySettings">
+    <option name="extensionsIgnore" value="true" />
+  </component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a0a4d15-3a34-4a21-8408-a2f200448836" name="Changes" comment="" />
+      <created>1663713152567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663713152567</updated>
+      <workItem from="1663713153800" duration="2069000" />
+      <workItem from="1663716891206" duration="18633000" />
+      <workItem from="1663967975116" duration="215000" />
+      <workItem from="1663968198727" duration="5360000" />
+      <workItem from="1663974562446" duration="9000" />
+      <workItem from="1663974603443" duration="9860000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
