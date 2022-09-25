@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a0a4d15-3a34-4a21-8408-a2f200448836" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/components/FileUpload.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/NavBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/Player.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/StepWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/TrackItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/TrackList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/TrackProgress.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/layouts/MainLayouts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pages/tracks/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pages/tracks/create.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pages/tracks/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/store/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/styles/Player.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/styles/TrackItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/hooks/useActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/hooks/useTypeSelector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store/action-creators/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store/action-creators/player.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store/reducers/playerReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/types/player.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Player.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/TrackProgress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/TrackProgress.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/tracks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/reducers/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "ts.external.directory.path": "/Users/macuser/Documents/javascriptProject/Pet-projects/spotify-clone/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -92,12 +91,23 @@
       <workItem from="1663967975116" duration="215000" />
       <workItem from="1663968198727" duration="5360000" />
       <workItem from="1663974562446" duration="9000" />
-      <workItem from="1663974603443" duration="9860000" />
+      <workItem from="1663974603443" duration="24452000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

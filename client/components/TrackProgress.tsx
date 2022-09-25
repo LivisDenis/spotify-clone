@@ -12,7 +12,7 @@ const TrackProgress: FC<TrackProgressProps> = ({left, right, onChange, width}) =
         <div style={{display: 'flex', alignItems: 'center', width: '100%'}}>
             <input
                 type="range"
-                min={left}
+                min={0}
                 max={right}
                 value={left}
                 onChange={onChange}

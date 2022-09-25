@@ -4,6 +4,7 @@ import * as React from 'react';
 import {useRouter} from "next/router";
 import {ITrack} from "../../types/track";
 import TrackList from "../../components/TrackList";
+import {useTypeSelector} from "../../hooks/useTypeSelector";
 
 const Index = () => {
     const router = useRouter()
