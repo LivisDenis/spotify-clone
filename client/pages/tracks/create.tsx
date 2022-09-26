@@ -3,11 +3,18 @@ import MainLayouts from "../../layouts/MainLayouts";
 import StepWrapper from "../../components/StepWrapper";
 import {Button, Grid, TextField} from "@mui/material";
 import FileUpload from "../../components/FileUpload";
+import {useInput} from "../../hooks/useInput";
+import axios from "axios";
+import {useRouter} from "next/router";
 
 const Create = () => {
     const [activeStep, setActiveStep] = useState(0);
     const [picture, setPicture] = useState('');
     const [audio, setAudio] = useState('');
+    const name = useInput('')
+    const artist = useInput('')
+    const text = useInput('')
+    const router = useRouter()
 
 
     const back = () => {
@@ -16,6 +23,16 @@ const Create = () => {
     const next = () => {
         if (activeStep !== 2) {
             setActiveStep(next => next + 1)
+        } else {
+            const formData = new FormData()
+            formData.append('name', name.value)
+            formData.append('artist', artist.value)
+            formData.append('text', text.value)
+            formData.append('picture', picture)
+            formData.append('audio', audio)
+            axios.post('http://localhost:5000/tracks', formData)
+                .then(res => router.push('/tracks'))
+                .catch(e => console.log(e))
         }
     }
 
@@ -25,15 +42,18 @@ const Create = () => {
                 {activeStep === 0 &&
                     <Grid container direction={"column"} style={{padding: 20}}>
                         <TextField
+                            {...name}
                             label='Название'
                             fullWidth
                         />
                         <TextField
+                            {...artist}
                             style={{marginTop: 20}}
                             label='Имя автора'
                             fullWidth
                         />
                         <TextField
+                            {...text}
                             style={{marginTop: 20}}
                             label='Текст песни'
                             fullWidth

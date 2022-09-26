@@ -18,7 +18,11 @@ const Player = () => {
             audio = new Audio()
         }else {
             setAudio()
-            play()
+            if (pause) {
+                playTrack()
+            }else {
+                pauseTrack()
+            }
         }
     }, [active]);
 
@@ -66,10 +70,10 @@ const Player = () => {
                         : <Pause/>
                     }
                 </IconButton>
-                <img src={active?.picture} height={70} width={70} style={{marginLeft: '20px'}}/>
+                <img src={'http://localhost:5000/' + active?.picture} height={70} width={70} style={{marginLeft: '20px'}}/>
                 <Grid container direction='column' style={{marginLeft: '20px', width: '120px'}}>
-                    <div style={{fontSize: 20}}>{active?.name}</div>
-                    <div style={{fontSize: 14}}>{active?.artist}</div>
+                    <div style={{fontSize: 18}}>{active?.name}</div>
+                    <div style={{fontSize: 12}}>{active?.artist}</div>
                 </Grid>
             </div>
             <TrackProgress left={currentTime} right={duration} width={350} onChange={changeCurrentTime}/>

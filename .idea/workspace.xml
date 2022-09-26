@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a0a4d15-3a34-4a21-8408-a2f200448836" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/store/action-creators/track.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/store/reducers/trackReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/hooks/useInput.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/components/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Player.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/TrackItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/TrackItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/tracks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/types/track.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/types/track.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/tracks/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/tracks/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/create.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +83,7 @@
       <workItem from="1663968198727" duration="5360000" />
       <workItem from="1663974562446" duration="9000" />
       <workItem from="1663974603443" duration="24877000" />
-      <workItem from="1664077474231" duration="7767000" />
+      <workItem from="1664077474231" duration="11892000" />
     </task>
     <servers />
   </component>
