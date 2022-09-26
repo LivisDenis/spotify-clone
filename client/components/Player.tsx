@@ -15,16 +15,25 @@ const Player = () => {
 
     useEffect(() => {
         if (!audio) {
-            audio = new Audio(track.audio)
+            audio = new Audio()
+        }else {
+            setAudio()
+            play()
+        }
+    }, [active]);
+
+    const setAudio = () => {
+        if (active) {
+            audio.src = 'http://localhost:5000/' + active.audio
             audio.volume = volume / 100
             audio.onloadedmetadata = () => {
-                setDuration(audio.duration)
+                setDuration(Math.ceil(audio.duration))
             }
             audio.ontimeupdate = () => {
-                setCurrentTime(audio.currentTime)
+                setCurrentTime(Math.ceil(audio.currentTime))
             }
         }
-    }, []);
+    }
 
     const play = () => {
         if (pause) {
@@ -46,6 +55,8 @@ const Player = () => {
         setCurrentTime(Number(e.target.value))
     }
 
+    if (!active) return null
+
     return (
         <div className={styles.player}>
             <div style={{display: 'flex', alignItems: 'center'}}>
@@ -55,10 +66,10 @@ const Player = () => {
                         : <Pause/>
                     }
                 </IconButton>
-                <img src={track.picture} height={70} width={70} style={{marginLeft: '20px'}}/>
+                <img src={active?.picture} height={70} width={70} style={{marginLeft: '20px'}}/>
                 <Grid container direction='column' style={{marginLeft: '20px', width: '120px'}}>
-                    <div style={{fontSize: 20}}>{track.name}</div>
-                    <div style={{fontSize: 14}}>{track.artist}</div>
+                    <div style={{fontSize: 20}}>{active?.name}</div>
+                    <div style={{fontSize: 14}}>{active?.artist}</div>
                 </Grid>
             </div>
             <TrackProgress left={currentTime} right={duration} width={350} onChange={changeCurrentTime}/>

@@ -1,19 +1,23 @@
 import MainLayouts from "../../layouts/MainLayouts";
-import {Box, Button, Card, Container, Grid} from "@mui/material";
+import {Box, Button, Card, Grid} from "@mui/material";
 import * as React from 'react';
 import {useRouter} from "next/router";
 import {ITrack} from "../../types/track";
 import TrackList from "../../components/TrackList";
+import {NextThunkDispatch, wrapper} from "../../store";
+import {fetchTracks} from "../../store/action-creators/track";
 import {useTypeSelector} from "../../hooks/useTypeSelector";
 
 const Index = () => {
     const router = useRouter()
+    const {tracks, error} = useTypeSelector(state => state.tracks)
 
-    const tracks: ITrack[] = [
-        {_id: 1, name: 'track 1', artist: 'artist 1', text: 'text about track 1', listens: 0, picture: 'http://localhost:5000/image/714c6f25-8b44-4022-b606-5e769ff675ab.jpeg', audio: 'https://dll.z2.fm/music/5/8e/hiti_2022_-_rasa_-_pogudim.mp3', comments: []},
-        {_id: 2, name: 'track 2', artist: 'artist 2', text: 'text about track 2', listens: 0, picture: 'http://localhost:5000/image/714c6f25-8b44-4022-b606-5e769ff675ab.jpeg', audio: 'https://dll.z2.fm/music/5/8e/hiti_2022_-_rasa_-_pogudim.mp3', comments: []},
-        {_id: 3, name: 'track 3', artist: 'artist 3', text: 'text about track 3', listens: 0, picture: 'http://localhost:5000/image/714c6f25-8b44-4022-b606-5e769ff675ab.jpeg', audio: 'https://dll.z2.fm/music/5/8e/hiti_2022_-_rasa_-_pogudim.mp3', comments: []},
-    ]
+    if (error) {
+        return <MainLayouts>
+                <h1>{error}</h1>
+            </MainLayouts>
+
+    }
 
     return (
         <MainLayouts>
@@ -36,3 +40,8 @@ const Index = () => {
 };
 
 export default Index;
+
+export const getServerSideProps = wrapper.getServerSideProps( async ({store}) => {
+    const dispatch = store.dispatch as NextThunkDispatch
+    await dispatch( await fetchTracks());
+});

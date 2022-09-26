@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a0a4d15-3a34-4a21-8408-a2f200448836" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/hooks/useActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/hooks/useTypeSelector.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/store/action-creators/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/store/action-creators/player.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/store/reducers/playerReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/types/player.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store/action-creators/track.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store/reducers/trackReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/components/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Player.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/TrackProgress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/TrackProgress.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/TrackItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/TrackItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/pages/tracks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/types/track.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/types/track.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +31,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/macuser/Documents/javascriptProject/Pet-projects/spotify-clone",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/Users/macuser/Documents/javascriptProject/Pet-projects/spotify-clone/client/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macuser/Documents/javascriptProject/Pet-projects/spotify-clone&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/macuser/Documents/javascriptProject/Pet-projects/spotify-clone/client/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactBuddySettings">
     <option name="extensionsIgnore" value="true" />
   </component>
@@ -91,7 +88,8 @@
       <workItem from="1663967975116" duration="215000" />
       <workItem from="1663968198727" duration="5360000" />
       <workItem from="1663974562446" duration="9000" />
-      <workItem from="1663974603443" duration="24452000" />
+      <workItem from="1663974603443" duration="24877000" />
+      <workItem from="1664077474231" duration="7767000" />
     </task>
     <servers />
   </component>
