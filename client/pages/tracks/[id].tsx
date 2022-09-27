@@ -27,7 +27,10 @@ const TrackPage = ({serverTrack}) => {
     }
 
     return (
-        <MainLayouts>
+        <MainLayouts
+            title={'Spotify-clone - ' + track.name}
+            keywords={`${track.name}, ${track.artist}`}
+        >
             <Button variant='outlined' onClick={() => router.push('/tracks')}>К списку</Button>
             <Grid container style={{marginTop: 50}}>
                 <img src={'http://localhost:5000/' + track.picture} height={150} width={150}/>

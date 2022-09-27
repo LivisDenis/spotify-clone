@@ -37,7 +37,7 @@ const Create = () => {
     }
 
     return (
-        <MainLayouts>
+        <MainLayouts title={'Spotify-clone - Загрузить трек'}>
             <StepWrapper activeStep={activeStep}>
                 {activeStep === 0 &&
                     <Grid container direction={"column"} style={{padding: 20}}>

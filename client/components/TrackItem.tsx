@@ -5,12 +5,13 @@ import {Delete, PauseCircle, PlayArrow} from "@mui/icons-material";
 import styles from '../styles/TrackItem.module.scss';
 import {useRouter} from "next/router";
 import {useActions} from "../hooks/useActions";
+import {useTypeSelector} from "../hooks/useTypeSelector";
 
 interface TrackItemProps {
     track: ITrack
     active?: boolean
 }
-
+let audio
 const TrackItem: FC<TrackItemProps> = ({track, active = false}) => {
     const router = useRouter()
     const {setActiveTrack, playTrack} = useActions()
