@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import {ITrack} from "../types/track";
 import {Card, Grid, IconButton} from "@mui/material";
 import {Delete, PauseCircle, PlayArrow} from "@mui/icons-material";
@@ -11,10 +11,12 @@ interface TrackItemProps {
     track: ITrack
     active?: boolean
 }
-let audio
-const TrackItem: FC<TrackItemProps> = ({track, active = false}) => {
+
+
+const TrackItem: FC<TrackItemProps> = ({track, active= false}) => {
     const router = useRouter()
     const {setActiveTrack, playTrack} = useActions()
+    const {pause} = useTypeSelector(state => state.player)
 
     const play = (e) => {
         e.stopPropagation()
@@ -25,7 +27,7 @@ const TrackItem: FC<TrackItemProps> = ({track, active = false}) => {
     return (
         <Card className={styles.track} onClick={() => router.push('/tracks/' + track._id)}>
             <IconButton onClick={play}>
-                {!active
+                {pause
                     ? <PlayArrow/>
                     : <PauseCircle/>
                 }
@@ -36,7 +38,7 @@ const TrackItem: FC<TrackItemProps> = ({track, active = false}) => {
                 <div>{track.artist}</div>
             </Grid>
             <div  style={{marginLeft: 'auto', display: 'flex', alignItems: 'center'}}>
-                <div style={{marginRight: 20, whiteSpace: 'nowrap'}}>2:12 / 3:45</div>
+                <div style={{marginRight: 20, whiteSpace: 'nowrap'}}>2:12 / 4:23</div>
                 <IconButton onClick={e => e.stopPropagation()}>
                     <Delete/>
                 </IconButton>

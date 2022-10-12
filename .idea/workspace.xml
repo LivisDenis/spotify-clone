@@ -4,11 +4,7 @@
     <list default="true" id="8a0a4d15-3a34-4a21-8408-a2f200448836" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/components/TrackItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/TrackItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/layouts/MainLayouts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/MainLayouts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/tracks/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/tracks/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/create.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/tracks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/tracks/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/store/action-creators/track.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/action-creators/track.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/TrackProgress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/TrackProgress.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +82,7 @@
       <workItem from="1663974562446" duration="9000" />
       <workItem from="1663974603443" duration="24877000" />
       <workItem from="1664077474231" duration="12579000" />
-      <workItem from="1664233978699" duration="3307000" />
+      <workItem from="1664233978699" duration="14948000" />
     </task>
     <servers />
   </component>

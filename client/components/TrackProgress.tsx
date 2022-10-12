@@ -18,7 +18,7 @@ const TrackProgress: FC<TrackProgressProps> = ({left, right, onChange, width}) =
                 onChange={onChange}
                 style={{display: 'block', width}}
             />
-            <div style={{marginLeft: '15px', whiteSpace: 'nowrap'}}>{left} / {right}</div>
+            <div style={{marginLeft: '15px', whiteSpace: 'nowrap', width: '70px'}}>{left} / {right}</div>
         </div>
     );
 };
