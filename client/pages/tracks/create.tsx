@@ -30,7 +30,7 @@ const Create = () => {
             formData.append('text', text.value)
             formData.append('picture', picture)
             formData.append('audio', audio)
-            axios.post('http://localhost:5000/tracks', formData)
+            axios.post('https://spotify-cline-api.onrender.com/tracks', formData)
                 .then(res => router.push('/tracks'))
                 .catch(e => console.log(e))
         }

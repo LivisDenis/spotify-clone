@@ -15,7 +15,7 @@ const TrackPage = ({serverTrack}) => {
 
     const addComment = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/tracks/comment', {
+            const response = await axios.post('https://spotify-cline-api.onrender.com/tracks/comment', {
                 username: username.value,
                 text: text.value,
                 trackId: track._id,

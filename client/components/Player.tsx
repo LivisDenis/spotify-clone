@@ -9,7 +9,7 @@ import React, {useEffect} from "react";
 let audio
 
 const Player = () => {
-    const track = {_id: 1, name: 'track 1', artist: 'artist 1', text: 'text about track 1', listens: 0, picture: 'http://localhost:5000/image/714c6f25-8b44-4022-b606-5e769ff675ab.jpeg', audio: 'http://localhost:5000/audio/620c2e0e-9614-4cf0-ac4a-d8906b069ced.mp3', comments: []}
+    const track = {_id: 1, name: 'track 1', artist: 'artist 1', text: 'text about track 1', listens: 0, picture: 'https://spotify-cline-api.onrender.com/image/714c6f25-8b44-4022-b606-5e769ff675ab.jpeg', audio: 'https://spotify-cline-api.onrender.com/audio/620c2e0e-9614-4cf0-ac4a-d8906b069ced.mp3', comments: []}
     const {active, duration, volume, pause, currentTime} = useTypeSelector(state => state.player)
     const {playTrack, pauseTrack, setActiveTrack, setDuration, setVolume, setCurrentTime} = useActions()
 
@@ -28,7 +28,7 @@ const Player = () => {
 
     const setAudio = () => {
         if (active) {
-            audio.src = 'http://localhost:5000/' + active.audio
+            audio.src = 'https://spotify-cline-api.onrender.com/' + active.audio
             audio.volume = volume / 100
             audio.onloadedmetadata = () => {
                 setDuration(Math.ceil(audio.duration))
@@ -70,7 +70,7 @@ const Player = () => {
                         : <Pause/>
                     }
                 </IconButton>
-                <img src={'http://localhost:5000/' + active?.picture} height={70} width={70} style={{marginLeft: '20px'}}/>
+                <img src={'https://spotify-cline-api.onrender.com/' + active?.picture} height={70} width={70} style={{marginLeft: '20px'}}/>
                 <Grid container direction='column' style={{marginLeft: '20px', width: '120px'}}>
                     <div style={{fontSize: 18}}>{active?.name}</div>
                     <div style={{fontSize: 12}}>{active?.artist}</div>

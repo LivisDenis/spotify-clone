@@ -32,7 +32,7 @@ const TrackItem: FC<TrackItemProps> = ({track, active= false}) => {
                     : <PauseCircle/>
                 }
             </IconButton>
-            <img src={'http://localhost:5000/' + track.picture} height={70} width={70}/>
+            <img src={'https://spotify-cline-api.onrender.com/' + track.picture} height={70} width={70}/>
             <Grid container direction='column' style={{marginLeft: '40px'}}>
                 <div style={{fontSize: 22}}>{track.name}</div>
                 <div>{track.artist}</div>
